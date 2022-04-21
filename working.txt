@@ -1,0 +1,36 @@
+
+
+Did a lot
+Set up models, added home page and posts page, stuctured apps well, added slugs, added bootstrap, added css, made twitter element on nav bar drop off on small
+
+
+
+Next 
+
+
+
+Soon
+Navbar on mobile
+Add my own font
+Add footer or bottom space
+Add projects page. Project hard coded to start. Has title and description. Can link to blog post for details. Can hide post if don't want in feed.
+
+
+Later Later
+Make blog markdown editor or rich text editor
+
+
+
+Notes
+I wanna use css not bootstrap for styling and spacing as much as possible
+
+
+
+
+
+
+
+
+
+
+

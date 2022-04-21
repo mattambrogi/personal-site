@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block additionalStyles %}
+<link rel="stylesheet" href="{% static 'css/posts.css' %}">
+{% endblock %}
+
+{% block content %}
+{% for post in post_list %}
+<ul class="post-entry mt-4">
+    <li>
+        <h5><a href="{% url 'blog_post' post.slug %}">{{ post.title }}</a></h5>
+        <p class="text-secondary">{{ post.created_at.date }}</p>
+    </li>
+</ul>
+{% endfor %}
+{% endblock content %}

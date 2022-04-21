@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block additionalStyles %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="home-content">
+    <h2 class="mb-3"> Hey, I'm Matt.</h2>
+    <p>I’m a programmer and, previously, a product manager.</p>
+    <p>At the beginning of 2022 I left my job to do a batch at <a href="https://www.recurse.com/">The Recurse
+            Center</a>, a self directed retreat for
+        engineers. For the past few months I’ve been building web apps, learning new tools and frameworks, studying
+        algorithms, and learning from other programmers.
+        If you're interested in reading about my experience at Recurse Center, you can check
+        out <a href="https://mattambrogi.bearblog.dev/">this blog</a> which I updated weekly during my batch.</p>
+    <p>Before Recurse Center, I was a product manager on Capital One’s machine learning platform.
+        My team built tools that enabled data scientists and engineers to experiment with, improve, and deploy models at
+        scale.
+    </p>
+    <p>
+        I also did data analysis at Capital One for a while and interned as a product manager at Alarm.com, a smart home
+        platform.
+        I went to The University of Maryland where I designed my own major called Engineering and Product Management.
+        My course work covered math, physics, computer science, mechanical engineering, design, and business.
+    </p>
+    <p>I host some writing and recent projects on this site. If you'd like to find out more about me,
+        you can find me on <a href="">Twitter</a>, <a href="https://github.com/mattambrogi">GitHub</a>,
+        or <a href="https://www.linkedin.com/in/matthew-ambrogi/">LinkedIn</a>
+    </p>
+</div>
+{% endblock content %}

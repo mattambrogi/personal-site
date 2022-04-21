@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block additionalStyles %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="project-entry mt-4">
+    <h5><a href="http://www.crimeindc.com/">Crime in DC</a></h5>
+    <p>There was a dramatic rise in violent crime in Washington DC, where I live, over the past few years.
+        I built this dashboard which keeps track of the number of shootings and robberies reported by the DC Police
+        Deparment via Twitter. </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://matt-eth-links.netlify.app/">Send Me a Article on the Blockchain</a></h5>
+    <p>Through this Solidity / React app, you can send me an article you think I should read and it will be stored as a
+        transcation on the Ethereum block chain.
+        When you send me an article, you may also be randomly chosen to recieve a small prize in ETH.
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://my-strava-data.herokuapp.com/">Strava Activity Analysis</a></h5>
+    <p>I use the app Strava to track my runs and bike rides. A while back I published a peice on how to access and
+        analyze activity data for other Strava users.
+        A lot of people reached out and asked if I could do this for them, so I built a web app that allows users to
+        authenticate into the Strava and recieve a report
+        containing stats and trends for their top activites.
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://questions-for-couples.herokuapp.com/">Questions for Couples</a></h5>
+    <p>A simple game that gives couples three levels of questions to ask each other: chill, deep, and deeper. Couples,
+        and even friends, can use it to get to know each other or
+        just fill some time.</p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://github.com/mattambrogi/job-board-platform">Shopify for Job Boards</a></h5>
+    <p>I noticed that a trend of a lot influences and niche leaders hosting job boards. Most were designing and building
+        their own from scratch.
+        I build an MVP for a web app that would abstract this process and serve as a Shopify for job boards. Pallet has
+        since come along and built a really cool business around a more sophisticated execution of this idea.
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://www.youtube.com/watch?v=xF-V-_LTU1Q">Tutible</a></h5>
+    <p>Tutible was a platform designed to match college students with peer tutors who has taken their class. I designed
+        and built this with the no-code platform Bubble before learning to program web apps.</p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://www.youtube.com/watch?v=q01ZX5MNLWw">Support Your Shops</a></h5>
+    <p>A directory of small businesses in my home town. I built this with Bubble at the beginning of the pandemic with
+        the intention of helping stores share info about their operations, hours, or deliveries.</p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://www.youtube.com/watch?v=1mTvlVmTBP0">Smart Lock</a></h5>
+    <p>A bluetooth enabled smart lock that I built with an Arduino.</p>
+</div>
+
+{% endblock content %}
