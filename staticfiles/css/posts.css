@@ -1,0 +1,10 @@
+
+.post-entry h5 a {
+    color:black;
+}
+
+.post-entry h5 a:visited {
+    color:grey;
+}
+
+
