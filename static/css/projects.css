@@ -5,3 +5,8 @@
     text-decoration-color: aqua;
 }
 
+.project-entry p a {
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
