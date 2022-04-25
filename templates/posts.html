@@ -6,11 +6,13 @@
 
 {% block content %}
 {% for post in post_list %}
+{% if post.show_in_feed %}
 <ul class="post-entry mt-4">
     <li>
         <h5><a href="{% url 'blog_post' post.slug %}">{{ post.title }}</a></h5>
         <p class="text-secondary">{{ post.created_at.date }}</p>
     </li>
 </ul>
+{% endif %}
 {% endfor %}
 {% endblock content %}
