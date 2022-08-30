@@ -4,6 +4,19 @@
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock %}
 
+{% block analytics %}
+<!-- Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3M9VCZRGS5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3M9VCZRGS5');
+</script>
+{% endblock analytics %}
+
 {% block content %}
 <div class="home-content">
     <h2 class="mb-3"> Hey, I'm Matt.</h2>

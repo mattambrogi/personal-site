@@ -4,6 +4,19 @@
 <link rel="stylesheet" href="{% static 'css/posts.css' %}">
 {% endblock %}
 
+{% block analytics %}
+<!-- Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3M9VCZRGS5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3M9VCZRGS5');
+</script>
+{% endblock analytics %}
+
 {% block content %}
 {% for post in post_list %}
 {% if post.show_in_feed %}
