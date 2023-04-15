@@ -6,6 +6,7 @@ from .models import Post
 class PostListView(ListView):
     model = Post
     template_name = "posts.html"
+    ordering = ['-created_at']
 
 class BlogPostView(DetailView):
     model = Post
