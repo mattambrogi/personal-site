@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import PostListView, BlogPostView
+from .views import PostListView, BlogPostView, NoteListView
 from .feeds import MostRecentPostsFeed
 
 urlpatterns = [

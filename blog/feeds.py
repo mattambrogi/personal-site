@@ -9,7 +9,7 @@ class MostRecentPostsFeed(Feed):
     description = 'Most recent posts'
 
     def items(self):
-        return Post.objects.all().order_by('created_at')
+        return Post.objects.all().filter(show_in_feed=True).order_by('created_at')
     
     def item_title(self, item):
         return item.title
