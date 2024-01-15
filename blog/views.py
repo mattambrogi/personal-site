@@ -8,6 +8,10 @@ class PostListView(ListView):
     template_name = "posts.html"
     ordering = ['-created_at']
 
+    def get_queryset(self):
+        queryset = super().get_queryset().filter(note=False)
+        return queryset
+
 class NoteListView(ListView):
     model = Post
     template_name = "notes.html"
