@@ -130,3 +130,39 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline', 'Strike'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source'],
+            ['CodeSnippet'],
+            ['HorizontalRule'],
+            ['TextColor', 'BGColor'],
+            ['Smiley'],
+            ['SpecialChar'],
+            ['Image'],
+            ['Table'],
+        ],
+        'extraPlugins': ','.join([
+            'liststyle',
+            'format',
+            'codesnippet',
+            'specialchar',
+            'image2',
+            'table',
+            'colorbutton',
+            'horizontalrule',
+        ]),
+        'removePlugins': 'image',
+        'image2_toolbar': [
+            'ImageFull',
+            'ImageSide',
+            'ImageTextAlternative',
+        ],
+    }
+}
