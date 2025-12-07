@@ -19,9 +19,70 @@
 
 {% block content %}
 <div class="project-entry mt-4">
+    <h5><a target="_blank" href="https://www.caiden.app/">Caiden (formerly StravaChat)</a> <span
+            class="project-year">2025</span></h5>
+    <p>
+        AI coaching and analytics for Strava athletes. Users ask natural language questions about their training data
+        and get insights via on-demand analysis. Under the hood, an agent writes and executes Python code in a
+        sandboxed environment. 300 users. <a target="_blank"
+            href="https://x.com/matt_ambrogi/status/1987186940123197442?s=20">Went viral</a> when Strava asked me to
+        shut it down for violating their
+        API terms—I got them to reverse the decision. Live <a target="_blank" href="https://www.caiden.app/">here</a>
+        (demo mode available even if you don't use Strava).
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a target="_blank" href="https://github.com/mattambrogi/coding-agent">Coding Agent</a> <span
+            class="project-year">2025</span></h5>
+    <p>
+        A coding agent built from scratch in ~1000 lines of Python. Can understand, write, and edit code. Inspired by
+        Anthropic's Claude Code. Very bare-bones—won't compare to the real thing—but helped me build intuition on how
+        these agents actually work. Repo <a target="_blank" href="https://github.com/mattambrogi/coding-agent">here</a>.
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a target="_blank" href="https://x.com/matt_ambrogi/status/1905299066780533136?s=20">Job Researcher</a> <span
+            class="project-year">2025</span></h5>
+    <p>
+        AI agent that searches the web to find jobs tailored to your specific criteria. Built with Idode Kerobo.
+        Inspired by Google/OpenAI's Deep Research paradigm—agentic search applied to a specific use case. 500 users
+        on launch day. Demo <a target="_blank"
+            href="https://x.com/matt_ambrogi/status/1905299066780533136?s=20">here</a>.
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a href="https://www.mattambrogi.com/posts/fine-tuning-vs-prompting/">Fine-Tuning for Writing Style</a> <span
+            class="project-year">2025</span></h5>
+    <p>
+        Fine-tuned five variations of GPT-4o to generate writing in my dad's blog style. Compared against prompt-based
+        approach with Claude. Writeup on learnings around fine-tuning, synthetic data generation, and style <a
+            href="https://www.mattambrogi.com/posts/fine-tuning-vs-prompting/">here</a>.
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a target="_blank" href="https://apps.apple.com/us/app/palate-custom-ai-podcasts/id6479173263">Palate AI</a>
+        <span class="project-year">2024</span></h5>
+    <p>
+        Cofounded a mobile app that turns articles into AI-generated audio summaries—launched before Google's
+        NotebookLM audio feature. 20,000+ palates generated. 4.7 rating on App Store. Available on <a target="_blank"
+            href="https://apps.apple.com/us/app/palate-custom-ai-podcasts/id6479173263">iOS</a>.
+    </p>
+</div>
+<div class="project-entry mt-4">
+    <h5><a target="_blank" href="https://x.com/matt_ambrogi/status/1813678073344073994?s=20">Prompt ELO</a>
+        <span class="project-year">2024</span></h5>
+    <p>
+        A tool to vibe test prompts with an ELO-style leaderboard. Despite so much talk about how to evaluate
+        LLM-based tasks, I haven't found any good tools to systematically experiment with prompts where 'good' is
+        subjective. Inspired by the Chatbot Arena Leaderboard—set up some prompts and models for a task, see two
+        outputs, pick a favorite, and win rates get logged to a Google Sheet. Demo <a target="_blank"
+            href="https://x.com/matt_ambrogi/status/1813678073344073994?s=20">here</a>.
+    </p>
+</div>
+<div class="project-entry mt-4">
     <h5><a target="_blank" href="https://github.com/mattambrogi/llm-summary-evals">Evaluating Claude Opus against GPT-4
             on Summarization
-            Tasks</a></h5>
+            Tasks</a> <span class="project-year">2024</span></h5>
     <p>
         Using the <a target="_blank" href="https://arxiv.org/abs/2303.16634">G-Eval</a> procedure to compare the
         performance of Claude
@@ -29,7 +90,8 @@
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a target="_blank" href="https://socratune.up.railway.app/">Socratune</a></h5>
+    <h5><a target="_blank" href="https://socratune.up.railway.app/">Socratune</a> <span class="project-year">2024</span>
+    </h5>
     <p>
         An LLM fine-tuned on a curated set of wisdom, advice, and insights. Great for life advice.
         I wrote some notes about the fine-tuning process
@@ -38,7 +100,7 @@
 </div>
 <div class="project-entry mt-4">
     <h5><a target="_blank" href="https://github.com/mattambrogi/agent-implementation">ReAct Agent Implementation</a>
-    </h5>
+        <span class="project-year">2024</span></h5>
     <p>
         A very basic Python implementation of an LLM powered agent following the ReAct (reason + action) framework.
         I shared some notes on the implementation <a
@@ -46,13 +108,15 @@
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a href="https://www.mattambrogi.com/posts/summary-evals/">Evaluting LLM Generated Summaries</a></h5>
+    <h5><a href="https://www.mattambrogi.com/posts/summary-evals/">Evaluting LLM Generated Summaries</a> <span
+            class="project-year">2023</span></h5>
     <p>
         An exploration of how we can use language models to evalute the qualty of their own summarization performance.
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a target="_blank" href="https://banking-agent.up.railway.app/">Personal Finance Agent</a></h5>
+    <h5><a target="_blank" href="https://banking-agent.up.railway.app/">Personal Finance Agent</a> <span
+            class="project-year">2023</span></h5>
     <p>
         An agent which can analyze and help you understand your spending. Built two versions: one using LangChain Agents
         and one using OpenAI's Assistants API.
@@ -68,7 +132,7 @@
 </div>
 <div class="project-entry mt-4">
     <h5><a href="https://www.mattambrogi.com/posts/improve-retrieval-augmented-generation/">Improving the Performance of
-            Retrieval Augmented Generation Systems</a></h5>
+            Retrieval Augmented Generation Systems</a> <span class="project-year">2023</span></h5>
     <p>
         Independent research exploring how to evaluate and improve the quality Retrieval Augmented Generation. Related
         writing:
@@ -90,7 +154,8 @@
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a target="_blank" href="https://legal-tech-bot.up.railway.app/">Legal Tech Chat Bot</a></h5>
+    <h5><a target="_blank" href="https://legal-tech-bot.up.railway.app/">Legal Tech Chat Bot</a> <span
+            class="project-year">2022</span></h5>
     <p>
         Exploring how to make a chatbot that can answer any question about the legal tech industy.
         Built using GPT-3.5 connected to a large collection of information on the industry.
@@ -100,7 +165,8 @@
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a target="_blank" href="https://my-strava-data.herokuapp.com/">Strava Activity Analysis</a></h5>
+    <h5><a target="_blank" href="https://my-strava-data.herokuapp.com/">Strava Activity Analysis</a> <span
+            class="project-year">2022</span></h5>
     <p>I use the app Strava to track my runs and bike rides. A while back I published a peice on how to access and
         analyze activity data for other Strava users.
         A lot of people reached out and asked if I could do this for them, so I built a web app that allows users to
@@ -111,28 +177,31 @@
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a target="_blank" href="https://github.com/mattambrogi/dc-crime">Crime in DC</a></h5>
+    <h5><a target="_blank" href="https://github.com/mattambrogi/dc-crime">Crime in DC</a> <span
+            class="project-year">2022</span></h5>
     <p><i>No longer live</i></p>
     <p>There was a dramatic rise in violent crime in Washington DC, where I live, over the past few years.
         I built this dashboard which keeps track of the number of shootings and robberies reported by the DC Police
         Deparment via Twitter. </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a href="https://matt-eth-links.netlify.app/">Send Me a Article on the Blockchain</a></h5>
+    <h5><a href="https://matt-eth-links.netlify.app/">Send Me a Article on the Blockchain</a> <span
+            class="project-year">2022</span></h5>
     <p>Through this Solidity / React app, you can send me an article you think I should read and it will be stored as a
         transcation on the Ethereum block chain.
         When you send me an article, you may also be randomly chosen to recieve a small prize in ETH.
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a href="#">Questions for Couples</a></h5>
+    <h5><a href="#">Questions for Couples</a> <span class="project-year">2022</span></h5>
     <p><i>No longer live</i></p>
     <p>A simple game that gives couples three levels of questions to ask each other: chill, deep, and deeper. Couples,
         and even friends, can use it to get to know each other or
         just fill some time.</p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a href="https://github.com/mattambrogi/job-board-platform">Shopify for Job Boards</a></h5>
+    <h5><a href="https://github.com/mattambrogi/job-board-platform">Shopify for Job Boards</a> <span
+            class="project-year">2020</span></h5>
     <p>I noticed that a trend of a lot influences and niche leaders hosting job boards. Most were designing and building
         their own from scratch.
         I build an MVP for a web app that would abstract this process and serve as a Shopify for job boards. Pallet has
@@ -140,17 +209,18 @@
     </p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a href="https://www.youtube.com/watch?v=xF-V-_LTU1Q">Tutible</a></h5>
+    <h5><a href="https://www.youtube.com/watch?v=xF-V-_LTU1Q">Tutible</a> <span class="project-year">2020</span></h5>
     <p>Tutible was a platform designed to match college students with peer tutors who has taken their class. I designed
         and built this with the no-code platform Bubble before learning to program web apps.</p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a href="https://www.youtube.com/watch?v=q01ZX5MNLWw">Support Your Shops</a></h5>
+    <h5><a href="https://www.youtube.com/watch?v=q01ZX5MNLWw">Support Your Shops</a> <span
+            class="project-year">2020</span></h5>
     <p>A directory of small businesses in my home town. I built this with Bubble at the beginning of the pandemic with
         the intention of helping stores share info about their operations, hours, or deliveries.</p>
 </div>
 <div class="project-entry mt-4">
-    <h5><a href="https://www.youtube.com/watch?v=1mTvlVmTBP0">Smart Lock</a></h5>
+    <h5><a href="https://www.youtube.com/watch?v=1mTvlVmTBP0">Smart Lock</a> <span class="project-year">2018</span></h5>
     <p>A bluetooth enabled smart lock that I built with an Arduino.</p>
 </div>
 
