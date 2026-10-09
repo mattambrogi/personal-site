@@ -5,10 +5,12 @@ from django.contrib.auth.models import User
 from django.utils.safestring import mark_safe
 from ckeditor.fields import RichTextField
 
+from .markdown_extensions import ExternalLinkExtension
+
 # Extensions used to render Markdown post bodies. "extra" covers fenced code
 # blocks and tables; "smarty" produces curly quotes so Markdown posts match the
 # typography of the older CKEditor ones.
-MARKDOWN_EXTENSIONS = ["extra", "sane_lists", "smarty"]
+MARKDOWN_EXTENSIONS = ["extra", "sane_lists", "smarty", ExternalLinkExtension()]
 
 
 class Post(models.Model):
