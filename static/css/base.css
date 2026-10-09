@@ -1,1 +1,135 @@
+/* Typography for rendered post bodies (Markdown and legacy CKEditor HTML).
+   Scoped to .post-body so the rest of the site keeps Bootstrap defaults. */
 
+.post-body {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #222;
+}
+
+.post-body > *:first-child {
+    margin-top: 0;
+}
+
+.post-body p {
+    margin-bottom: 1.15rem;
+}
+
+/* Headings: clearly distinct from body text without being oversized. */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.post-body h1 { font-size: 1.6rem; }
+.post-body h2 { font-size: 1.4rem; }
+.post-body h3 { font-size: 1.2rem; }
+.post-body h4,
+.post-body h5,
+.post-body h6 { font-size: 1.05rem; }
+
+.post-body a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.post-body ul,
+.post-body ol {
+    margin-bottom: 1.15rem;
+    padding-left: 1.5rem;
+}
+
+.post-body li {
+    margin-bottom: 0.4rem;
+}
+
+/* Keep wide images inside the column instead of overflowing it. */
+.post-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.75rem auto;
+    border-radius: 3px;
+}
+
+.post-body figure {
+    max-width: 100%;
+    margin: 1.75rem 0;
+}
+
+.post-body figcaption {
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.post-body blockquote {
+    margin: 1.75rem 0;
+    padding: 0.25rem 0 0.25rem 1.1rem;
+    border-left: 3px solid aqua;
+    color: #555;
+}
+
+.post-body blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Inline code and fenced code blocks. */
+.post-body code {
+    background-color: #f0f0f0;
+    padding: 0.15em 0.35em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #c7254e;
+}
+
+.post-body pre {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.45;
+}
+
+.post-body pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+.post-body hr {
+    margin: 2.25rem 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.post-body table {
+    width: 100%;
+    margin: 1.75rem 0;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.post-body th,
+.post-body td {
+    border: 1px solid #ddd;
+    padding: 0.5rem 0.65rem;
+    text-align: left;
+}
+
+.post-body th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+}

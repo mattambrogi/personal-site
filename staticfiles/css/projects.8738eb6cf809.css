@@ -1,0 +1,19 @@
+
+.project-entry h5 a {
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.project-entry p a {
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.project-year {
+    font-weight: normal;
+    text-decoration: none;
+    color: #666;
+    font-size: 0.85em;
+}

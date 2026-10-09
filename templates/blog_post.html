@@ -16,6 +16,6 @@
 {% block content %}
 <div class="post-entry">
     <h2 class="mb-3">{{ post.title }}</h2>
-    <p>{{ post.body | safe }}</p>
+    <div class="post-body">{{ post.body_html }}</div>
 </div>
 {% endblock content %}
